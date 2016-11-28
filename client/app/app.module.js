@@ -28,6 +28,7 @@ var floorseach_component_1 = require('./floor/floorseach.component');
 var sign_up_component_1 = require("./sign_up/sign_up.component");
 var managebook_component_1 = require("./managebook/managebook.component");
 var formt_component_1 = require("./formteacher/formt.component");
+var contact_component_1 = require("./Contact/contact.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -51,7 +52,8 @@ var AppModule = (function () {
                 floor3_component_1.Floor3Component,
                 highlight_directive_1.HighlightDirective,
                 floorseach_component_1.FloorseachComponent,
-                managebook_component_1.managebookComponent
+                managebook_component_1.managebookComponent,
+                contact_component_1.contactComponent
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
