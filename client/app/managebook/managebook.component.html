@@ -25,7 +25,7 @@
             <td>
 
                 <button *ngIf='clickA==false && clickB==false' class="btn btn-default light-green accent-4" (click)="submitted=true">About</button>
-                <a *ngIf='clickA==true ' class="btn-flat disabled">About</a>
+                <a *ngIf='clickA==true ' class="btn-flat disabled  light-green accent-2">About</a>
                 <a *ngIf='clickB==true' class="btn-flat disabled deep-orange lighten-4">About</a>
             </td>
         </tr>
@@ -35,7 +35,7 @@
             <td>12/05/2016</td>
             <td>12.30-13.30</td>
             <td>
-                <a  class="btn-flat disabled">About</a>
+                <a  class="btn-flat disabled  light-green accent-2">About</a>
             </td>
         </tr>
         <tr>
@@ -44,11 +44,19 @@
             <td>12/06/2016</td>
             <td>16.30-18.30</td>
             <td>
-                <a class="btn-flat disabled">About</a>
+                <a class="btn-flat disabled  light-green accent-2">About</a>
             </td>
         </tr>
+
+
         </tbody>
     </table>
+    <div class="row">
+        <div class="cow">
+            <button class="btn-flat grey lighten-1" routerLinkActive="active" routerLink = '/tech'>
+            <i class="large material-icons">skip_previous</i></button>
+        </div>
+    </div>
 </div></div>
 
 <div  [hidden]="!submitted">
@@ -63,7 +71,7 @@
             </div>
         </nav>
         <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                         <br>
@@ -78,7 +86,7 @@
                         <br>
                         <p>Student's ID: 58340500006</p>
                         <br>
-                        <p>Grade: ปีสอง</p>
+                        <p>Grade: ปี 2</p>
                         <br>
                         <p>Reason for using this place: เนื่องจากเป็นช่วงสอบปลายภาคจึงขอใช้ห้องนี้เพื่อใช้ในการอ่านหนังสือกับเพื่อน</p>
                         <br>
@@ -89,7 +97,7 @@
             </div>
         </div>
         <div class="right-align">
-            <br><button class="btn btn-default  red lighten-1" (click)="submitted=false ;clickB=true">Deny</button>
+            <button class="btn btn-default  red lighten-1" (click)="submitted=false ;clickB=true">Deny</button>
             <button class="btn btn-default light-green darken-1" (click)="clickA=true ; submitted=false">Submit</button>
 
         </div>
