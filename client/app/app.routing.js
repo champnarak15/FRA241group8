@@ -13,8 +13,10 @@ var form_component_1 = require('./form/form.component');
 var sign_up_component_1 = require('./sign_up/sign_up.component');
 var managebook_component_1 = require("./managebook/managebook.component");
 var formt_component_1 = require("./formteacher/formt.component");
+var contact_component_1 = require("./Contact/contact.component");
 var appRoutes = [
     { path: '', component: login_component_1.logincomponent },
+    { path: 'contact', component: contact_component_1.contactComponent },
     { path: 'managebookingroom', component: managebook_component_1.managebookComponent },
     { path: 'floorseach', component: floorseach_component_1.FloorseachComponent },
     { path: 'login', component: login_component_1.logincomponent },
